@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+  
+
     <title>Lab. Akuntansi Menengah | Universitas Gunadarma</title>
     
 
@@ -140,74 +144,34 @@
   </head>
 
   <body>
-   
+      <script src="script.js"></script>
     
-<div class="floatingButtonWrap">
-    <div class="floatingButtonInner">
-        <a href="#" class="floatingButton">
-            <i class="fa fa-whatsapp icon-default"></i>
-        </a>
-        <ul class="floatingMenu">
-            <li>
-                <a href="#">Admin Depok 1</a>
-            </li>
-            <li>
-                <a href="#">Admin Depok 2</a>
-            </li>
-            <li>
-                <a href="#">Admin Depok 3</a>
-            </li>
-            <li>
-                <a href="#">Admin Kalimalang 1</a>
-            </li>
-            <li>
-                <a href="#">Admin Kalimalang 2</a>
-            </li>
-            
-        </ul>
-    </div>
-</div>
+      <div class="floatingButtonWrap">
+          <div class="floatingButtonInner">
+              <a href="#" class="floatingButton">
+                  <i class="fa fa-whatsapp icon-default"></i>
+              </a>
+              <ul class="floatingMenu">
+                  <li>
+                      <a href="https://api.whatsapp.com/send?phone=6281808822811">Admin1 Depok<span class="fa fa-whatsapp"></span></a> 
+                  </li>
+                  <li>
+                      <a href="https://api.whatsapp.com/send?phone=6281284444521">Admin2 Depok<span class="fa fa-whatsapp"></span></a> 
+                  </li>
+                  <li>
+                      <a href="https://api.whatsapp.com/send?phone=62895327109744">Admin3 Depok<span class="fa fa-whatsapp"></span></a> 
+                  </li>
+                  <li>
+                      <a href="https://api.whatsapp.com/send?phone=628972805608">Admin1 Kalimalang<span class="fa fa-whatsapp"></span></a> 
+                  </li>
+                  <li>
+                      <a href="https://api.whatsapp.com/send?phone=687880906022">Admin2 Kalimalang<span class="fa fa-whatsapp"></span></a> 
+                  </li>
+                  
+              </ul>
+          </div>
+      </div>
 
-<script>
-    $(document).ready(function(){
-          $('.floatingButton').on('click',
-              function(e){
-                  e.preventDefault();
-                  $(this).toggleClass('open');
-                  if($(this).children('.fa').hasClass('fa-plus'))
-                  {
-                      $(this).children('.fa').removeClass('fa-plus');
-                      $(this).children('.fa').addClass('fa-close');
-                  } 
-                  else if ($(this).children('.fa').hasClass('fa-close')) 
-                  {
-                      $(this).children('.fa').removeClass('fa-close');
-                      $(this).children('.fa').addClass('fa-plus');
-                  }
-                  $('.floatingMenu').stop().slideToggle();
-              }
-          );
-          $(this).on('click', function(e) {
-              var container = $(".floatingButton");
-  
-              // if the target of the click isn't the container nor a descendant of the container
-              if (!container.is(e.target) && $('.floatingButtonWrap').has(e.target).length === 0) 
-              {
-                  if(container.hasClass('open'))
-                  {
-                      container.removeClass('open');
-                  }
-                  if (container.children('.fa').hasClass('fa-close')) 
-                  {
-                      container.children('.fa').removeClass('fa-close');
-                      container.children('.fa').addClass('fa-plus');
-                  }
-                  $('.floatingMenu').hide();
-              }
-          });
-      });
-  </script>
- 
 
   <!-- Start header section -->
   <header id="mu-header">  
