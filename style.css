@@ -25,6 +25,9 @@
 #FOOTER SECTION
 #RESPONSIVE DESIGN
 */
+.carousel .carousel-item{
+  width:100%;
+}
 
 body {
   background-color: #ffffff;
@@ -1936,4 +1939,6 @@ RESERVATION SECTION
   width: 50%;
   padding: 10px;
 }
+
+
 }
