@@ -25,6 +25,34 @@
 #FOOTER SECTION
 #RESPONSIVE DESIGN
 */
+
+/* ==================================================================
+	7.0 Preloader
+================================================================== */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 10001;
+}
+
+#loading-animation {
+  width: 120px;
+  height: 128px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(assets/img/LOGO_LABAMEN.PNG); 
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -60px 0 0 -64px;
+}
+
+
 #exTab3 .nav-pills > li > a {
   border-radius: 4px 4px 0 0 ;
 }
